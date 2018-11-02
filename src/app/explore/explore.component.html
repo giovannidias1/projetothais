@@ -1,0 +1,160 @@
+<div class="wrapper">
+  <div class="page-header clear-filter page-header-small" filter-color="red">
+    <div class="page-header-image rellax-header" data-rellax-speed="-7" style="background-image: url('assets/img/bg12.jpg');">
+
+    </div>
+    <div class="container">
+      <div class="content-center brand">
+        <h3>Explore, descobra, viva...</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
+              <input type="text" class="form-control input-new" placeholder="Estado, cidade, local..." (focus)="focus1=true"
+                (blur)="focus1=false">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="datepicker-container">
+              <div class="form-group">
+                <input class="form-control datetimepicker input-new" placeholder="06/07/2017" name="dp" [(ngModel)]="model"
+                  ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main" >
+    <div class="section ">
+      <div class="container" style="margin-bottom: 30px">
+        <div class="row">
+          <div class="col-md-8 ml-auto mr-auto ">
+            <h6 class="title">Coisas para fazer em</h6>
+            <h1 class="title">São Paulo</h1>
+            <h4 class="description">A maior cidade da américa latina é uma grande mescla de estilos e culturas. Sampa abriga pessoas de mais de 70 nacionalidade e 
+              toda essa diverisadade pode ser  conferida em diversos bairros da capital.</h4>
+          </div>
+        </div>
+        <div class="container " style="margin-top: 50px">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-image text-center">
+                  <h1 class="image-title title">MASP</h1><img alt="" class="rounded" src="assets/img/masp.jpg">
+                </div>
+                <div class="card-body">
+                  <h4 class="info-title">Museu de Artes de São Paulo - MASP</h4>
+                  <p class="description">Principal museu da cidade, o MASP marca o coração da Avenida Paulista. O
+                    espaço está entre os princípais pontos túristicos</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-image text-center">
+                  <h1 class="image-title title">Teatro Municipal</h1><img alt="" class="rounded" src="assets/img/teatro.jpg">
+                </div>
+                <div class="card-body">
+                  <h4 class="info-title">teatro Municipal de São Paulo</h4>
+                  <p class="description">Principal museu da cidade, o MASP marca o coração da Avenida Paulista. O
+                    espaço está entre os princípais pontos túristicos</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-image text-center">
+                  <h1 class="image-title title">Jardim Botânico</h1><img alt="" class="rounded" src="assets/img/jardim.jpg">
+                </div>
+                <div class="card-body">
+                  <h4 class="info-title">Jardim Botânico</h4>
+                  <p class="description">Principal museu da cidade, o MASP marca o coração da Avenida Paulista. O
+                    espaço está entre os princípais pontos túristicos</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-image text-center">
+                  <h1 class="image-title title">Liberdade</h1><img alt="" class="rounded" src="assets/img/liberdade.jpg">
+                </div>
+                <div class="card-body">
+                  <h4 class="info-title">Bairro da Liberdade</h4>
+                  <p class="description">Principal museu da cidade, o MASP marca o coração da Avenida Paulista. O
+                    espaço está entre os princípais pontos túristicos</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-image text-center">
+                  <h1 class="image-title title">Ibirapuera</h1><img alt="" class="rounded" src="assets/img/ibirapuera.jpg">
+                </div>
+                <div class="card-body">
+                  <h4 class="info-title">Parque do Ibirapuera</h4>
+                  <p class="description">Principal museu da cidade, o MASP marca o coração da Avenida Paulista. O
+                    espaço está entre os princípais pontos túristicos</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-image text-center">
+                  <h1 class="image-title title">BANESPÃO</h1><img alt="" class="rounded" src="assets/img/banespa.jpg">
+                </div>
+                <div class="card-body">
+                  <h4 class="info-title">Farol Santander - Banespa</h4>
+                  <p class="description">Principal museu da cidade, o MASP marca o coração da Avenida Paulista. O
+                    espaço está entre os princípais pontos túristicos</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <footer class="footer footer-big" data-background-color="pallete-first">
+        <div class="container">
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a class="navbar-brand" [routerLink]="['/index']">
+                            <strong>VISIT</strong> GUIA
+                        </a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="copyright-new">
+                            &copy;
+                            {{data | date: 'yyyy'}}, Todos os direitos reservados.
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <ul class="social-buttons">
+                            <li><a class="btn btn-icon btn-neutral btn-twitter btn-round" href="#pablo"><i class="fa fa-twitter"
+                                        style="color: #e03760"></i></a></li>
+                            <li><a class="btn btn-icon btn-neutral btn-facebook btn-round" href="#pablo"><i class="fa fa-facebook-square"
+                                        style="color: #e03760"></i></a></li>
+                            <li><a class="btn btn-icon btn-neutral btn-dribbble btn-round" href="#pablo"><i class="fa fa-dribbble"
+                                        style="color: #e03760"></i></a></li>
+                            <li><a class="btn btn-icon btn-neutral btn-google btn-round" href="#pablo"><i class="fa fa-google-plus"
+                                        style="color: #e03760"></i></a></li>
+                            <li><a class="btn btn-icon btn-neutral btn-instagram btn-round" href="#pablo"><i class="fa fa-instagram"
+                                        style="color: #e03760"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+  </div>
+  
+</div>

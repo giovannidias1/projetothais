@@ -1,0 +1,44 @@
+.input-new {
+  background-color: white !important;
+  height: 50px;
+}
+
+.card {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.info-title {
+  margin-top: 0;
+}
+
+.image-title {
+  position: absolute;
+  color: white;
+}
+
+.card-image {
+  height: 100%;
+  min-height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.rounded {
+  min-width: 340px;
+  min-height: 255px;
+  max-height: 255px;
+}
+
+.footer-big {
+    padding: 30px 0;
+    background-color: #e03760 !important;
+}
+
+.copyright-new{
+    margin-top: 10px
+}

@@ -1,0 +1,204 @@
+<div class="wrapper">
+    <div class="page-header clear-filter page-header-small" filter-color="orange">
+        <div class="page-header-image rellax-header" data-rellax-speed="-7" style="background-image: url('assets/img/brazil-buildings.jpg');">
+
+        </div>
+        <div class="container">
+            <div class="content-center brand">
+                <h3>O guia que irá encontrar os melhores lugar para ir onde quer que esteja</h3>
+                <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
+                    <input type="text" class="form-control input-new" placeholder="Procurar..." (focus)="focus1=true"
+                        (blur)="focus1=false">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="now-ui-icons ui-1_zoom-bold"></i></span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="section ">
+            <div class="container" style="margin-bottom: 30px">
+                <div class="row">
+                    <div class="col-md-8 ml-auto mr-auto text-center">
+                        <h2 class="title">Lugares mais visitados</h2>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container">
+                <div class="row" >
+                    <div class="col-md-4" *ngFor="let topItem of topItems">
+                        <div class="card  card-top card-pricing card-background card-raised card-background-{{topItem.color}}" [style.background-image]="'url(' + topItem.image + ')'">
+                            <div class="card-body">
+                                <div class="footer-body">
+                                    <h2 class="info-title">{{topItem.city}}</h2>
+                                    <h6 class="info-category">{{topItem.local}}</h6>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="section ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 ml-auto mr-auto text-center" style="margin-bottom: 30px">
+                        <h2 class="title">Categorias</h2>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 ml-auto mr-auto">
+                        <div class="card card-plain">
+                            <div class="row">
+                                <div class="col-md-4" style="padding: 0">
+                                    <div class="card-image"><a href="#pablo"><img class="img img-raised rounded" src="assets/img/nature.jpg"></a></div>
+                                </div>
+                                <div class="col-md-7 card-profile">
+                                    <div class="card-body card-body-small text-center">
+                                        <h6>Natureza</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 ml-auto mr-auto">
+                        <div class="card card-plain">
+                            <div class="row">
+                                <div class="col-md-4" style="padding: 0">
+                                    <div class="card-image"><a href="#pablo"><img class="img img-raised rounded" src="assets/img/history.jpg"></a></div>
+                                </div>
+                                <div class="col-md-7 card-profile">
+                                    <div class="card-body card-body-small text-center">
+                                        <h6>Históricos</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 ml-auto mr-auto">
+                        <div class="card card-plain">
+                            <div class="row">
+                                <div class="col-md-4" style="padding: 0">
+                                    <div class="card-image"><a href="#pablo"><img class="img img-raised rounded" src="assets/img/fooddrink.jpg"></a></div>
+                                </div>
+                                <div class="col-md-7 card-profile">
+                                    <div class="card-body card-body-small text-center" style="padding: 20px 0px 20px 0px">
+                                        <h6>Comer e Beber</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 ml-auto mr-auto">
+                        <div class="card card-plain">
+                            <div class="row">
+                                <div class="col-md-4" style="padding: 0">
+                                    <div class="card-image"><a href="#pablo"><img class="img img-raised rounded" src="assets/img/art.jpg"></a></div>
+                                </div>
+                                <div class="col-md-7 card-profile">
+                                    <div class="card-body card-body-small text-center">
+                                        <h6>Arte</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 ml-auto mr-auto">
+                        <div class="card card-plain">
+                            <div class="row">
+                                <div class="col-md-4" style="padding: 0">
+                                    <div class="card-image"><a href="#pablo"><img class="img img-raised rounded" src="assets/img/romance.jpg"></a></div>
+                                </div>
+                                <div class="col-md-7 card-profile">
+                                    <div class="card-body card-body-small text-center">
+                                        <h6>Romance</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 ml-auto mr-auto">
+                        <div class="card card-plain">
+                            <div class="row">
+                                <div class="col-md-4" style="padding: 0">
+                                    <div class="card-image"><a href="#pablo"><img class="img img-raised rounded" src="assets/img/free.jpg"></a></div>
+                                </div>
+                                <div class="col-md-7 card-profile">
+                                    <div class="card-body card-body-small text-center">
+                                        <h6>Gratuitos</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="section ">
+                <div class="container" style="margin-bottom: 30px">
+                    <div class="row">
+                        <div class="col-md-8 ml-auto mr-auto text-center">
+                            <button class="btn btn-primary btn-simple btn-round btn-lg" type="button">Carregar mais</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <footer class="footer footer-big" data-background-color="pallete-first">
+            <div class="container">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a class="navbar-brand" [routerLink]="['/index']">
+                                <strong>VISIT</strong> GUIA
+                            </a>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="copyright-new">
+                                &copy;
+                                {{data | date: 'yyyy'}}, Todos os direitos reservados.
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 text-center">
+                            <ul class="social-buttons">
+                                <li><a class="btn btn-icon btn-neutral btn-twitter btn-round" href="#pablo"><i class="fa fa-twitter"
+                                            style="color: #e03760"></i></a></li>
+                                <li><a class="btn btn-icon btn-neutral btn-facebook btn-round" href="#pablo"><i class="fa fa-facebook-square"
+                                            style="color: #e03760"></i></a></li>
+                                <li><a class="btn btn-icon btn-neutral btn-dribbble btn-round" href="#pablo"><i class="fa fa-dribbble"
+                                            style="color: #e03760"></i></a></li>
+                                <li><a class="btn btn-icon btn-neutral btn-google btn-round" href="#pablo"><i class="fa fa-google-plus"
+                                            style="color: #e03760"></i></a></li>
+                                <li><a class="btn btn-icon btn-neutral btn-instagram btn-round" href="#pablo"><i class="fa fa-instagram"
+                                            style="color: #e03760"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </footer>
+    </div>
+</div>
